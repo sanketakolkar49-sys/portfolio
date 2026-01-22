@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sanket Akolkar | Portfolio</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #0f172a;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    /* ===== HERO SECTION ===== */
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 10%;
+      background: radial-gradient(circle at top, #1e293b, #020617);
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 60px;
+      align-items: center;
+      width: 100%;
+      max-width: 1200px;
+    }
+
+    .hero h1 {
+      font-size: 3.2rem;
+      font-weight: 700;
+    }
+
+    .hero h1 span {
+      color: #38bdf8;
+    }
+
+    .hero p {
+      margin: 20px 0;
+      font-size: 1.1rem;
+      color: #cbd5f5;
+    }
+
+    .btns a {
+      display: inline-block;
+      margin-right: 15px;
+      padding: 12px 26px;
+      border-radius: 30px;
+      background: #38bdf8;
+      color: #020617;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btns a.secondary {
+      background: transparent;
+      border: 2px solid #38bdf8;
+      color: #38bdf8;
+    }
+
+    .btns a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(56,189,248,0.4);
+    }
+
+    /* ===== PROFILE IMAGE ===== */
+    .hero img {
+  width: 340px;
+  height: 340px;
+  object-fit: cover;
+  object-position: center top;   /* ✅ SHOWS HAIR */
+  border-radius: 50%;
+  border: 5px solid #38bdf8;
+  box-shadow: 0 20px 50px rgba(56,189,248,0.45);
+  justify-self: center;
+}
+
+
+    /* ===== SECTIONS ===== */
+    section {
+      padding: 90px 10%;
+    }
+
+    section h2 {
+      font-size: 2.4rem;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    section h2 span {
+      color: #38bdf8;
+    }
+
+    /* ===== SKILLS & CARDS ===== */
+    .skills, .certs, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: #020617;
+      padding: 25px;
+      border-radius: 18px;
+      border: 1px solid #1e293b;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      border-color: #38bdf8;
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #38bdf8;
+    }
+
+    /* ===== EXPERIENCE ===== */
+    .timeline {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .item {
+      margin-bottom: 30px;
+      padding-left: 20px;
+      border-left: 3px solid #38bdf8;
+    }
+
+    .item h3 {
+      font-size: 1.2rem;
+    }
+
+    .item span {
+      font-size: 0.9rem;
+      color: #94a3b8;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      text-align: center;
+      padding: 40px;
+      background: #020617;
+      border-top: 1px solid #1e293b;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .hero img {
+        margin-top: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- ===== HERO ===== -->
+<header>
+  <div class="hero">
+    <div>
+      <h1>Hi, I'm <span>Sanket Akolkar</span></h1>
+      <p>
+        Computer Engineering Graduate | Java Developer | Full Stack & AI Enthusiast
+        <br>Based in Pune, Maharashtra
+      </p>
+      <div class="btns">
+  <a href="mailto:sanketakolkar49@gmail.com">Hire Me</a>
+  <a class="secondary" href="Sanket_Akolkar_Resume.pdf" download>Download Resume</a>
+  <a class="secondary" href="https://www.linkedin.com/in/sanket-akolkar-aa99a82b9/" target="_blank">LinkedIn</a>
+</div>
+
+    </div>
+
+    <!-- PROFILE IMAGE -->
+    <img src="C:\Users\Dell\Downloads\WhatsApp Image 2026-01-20 at 10.24.47 AM.jpeg" alt="Sanket Akolkar">
+  </div>
+</header>
+
+<!-- ===== SKILLS ===== -->
+<section>
+  <h2><span>Technical</span> Skills</h2>
+  <div class="skills">
+    <div class="card"><h3>Programming</h3><p>Java, C++, Python</p></div>
+    <div class="card"><h3>Frameworks</h3><p>Spring Core, Hibernate, Collections</p></div>
+    <div class="card"><h3>Web</h3><p>HTML5, CSS3, JavaScript</p></div>
+    <div class="card"><h3>Databases</h3><p>MySQL, MongoDB, NoSQL</p></div>
+    <div class="card"><h3>AI / ML</h3><p>Machine Learning, Object Detection</p></div>
+    <div class="card"><h3>Cloud & Tools</h3><p>AWS, GIS Tools, Arduino IDE</p></div>
+  </div>
+</section>
+
+<!-- ===== EXPERIENCE ===== -->
+<section>
+  <h2><span>Professional</span> Experience</h2>
+  <div class="timeline">
+    <div class="item">
+      <h3>Java Developer – Greateway Software Pvt. Ltd.</h3>
+      <span>June 2025 – Present | Pune</span>
+      <p>Developing enterprise Java applications, backend services, and MySQL integrations using agile methodologies.</p>
+    </div>
+
+    <div class="item">
+      <h3>AI & Machine Learning Intern – AICTE EduSkills</h3>
+      <span>Dec 2023 – Feb 2024 | Remote</span>
+      <p>Built object detection systems using TensorFlow Lite and optimized ML pipelines for real-time inference.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section>
+  <h2><span>Featured</span> Projects</h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Geolocation Data Analytics</h3>
+      <p>GIS-based analytics system with ML models achieving 80% accuracy for spatial insights.</p>
+    </div>
+    <div class="card">
+      <h3>E-Commerce Platform</h3>
+      <p>Full-stack e-commerce website with authentication, cart system, and MySQL database.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CERTIFICATIONS ===== -->
+<section>
+  <h2><span>Certifications</span></h2>
+  <div class="certs">
+    <div class="card">Java Full Stack Developer – Fusion Software Institute</div>
+    <div class="card">AWS Cloud Foundation</div>
+    <div class="card">AWS Data Analytics</div>
+    <div class="card">Ethical Hacking – Udemy</div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <p>© 2026 Sanket Akolkar | 📧 sanketakolkar49@gmail.com | 📞 +91 9049737529</p>
+</footer>
+
+</body>
+</html>
